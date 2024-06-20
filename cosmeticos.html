@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polette Boutique - Cosméticos </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="productos">
+    <header>
+        <img src="img/logo.jpeg" alt="Polette Boutique Logo" class="logo">
+
+        <h1>Polette Boutique</h1>
+             <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="sugerencias.html">Sugerencias</a></li>
+        <li><a href="encuesta.html">Encuesta</a></li>
+        <li><a href="inspira.html">Inspos</a></li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nuestros Productos - Cosméticos</h2>
+            <div class="product-gallery">
+                <div class="product-item">
+                    <img src="img/c1.jpeg" alt="Cosmetico 1">
+                    <p> KARA Bronzed Goddess Paleta de Bronzer e Iluminadores - $300 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('KARA Bronzed Goddess Paleta de Bronzer e Iluminadores')">Agregar Reseña</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/c2.jpeg" alt="Cosmetico 2">
+                    <p> Rubor Love Recipe Duo Moira - $200 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Rubor Love Recipe Duo Moira')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/c3.jpeg" alt="Cosmetico 3">
+                    <p> Love Recipe Blush Duo Moira - $200 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Love Recipe Blush Duo Moira')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/c4.jpeg" alt="Cosmetico 4">
+                    <p> Elf Keep Your Balance Toner - $350 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Elf Keep Your Balance Toner')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/c5.jpeg" alt="Cosmetico 5">
+                    <p> Contour Palette Elf - $350</p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena(' Contour Palette Elf')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/c6.jpeg" alt="Cosmetico 6">
+                    <p> Labiales Maybelline New York Superstay Matte y Vinyl Ink- $300 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Labiales Maybelline New York Superstay Matte y Vinyl Ink')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/c7.jpeg" alt="Cosmetico 7">
+                    <p> Polvo Perfect Finish HD Powder Elf - $300 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Polvo Perfect Finish HD Powder Elf')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/c8.jpeg" alt="Cosmetico 8">
+                    <p> Labial liquido Revlon Limitless Beauty Sleep - $230 </p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Labial liquido Revlon Limitless Beauty Sleep')">Agregar Reseña</button>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Polette Boutique</p>
+    </footer>
+    <script>
+        function agregarResena(producto) {
+            const resena = prompt(`Escribe tu reseña para ${producto}:`);
+            if (resena) {
+                alert('¡Gracias por tu reseña!');
+            }
+        }
+    </script>
+</body>
+</html>

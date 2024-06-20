@@ -1,0 +1,313 @@
+body {
+     font-family: Times New Roman, serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para el fondo de cada página */
+body.home {
+    background-image: url('img/fondo.jfif');
+}
+
+body.productos {
+    background-image: url('img/fondo2.jfif');
+}
+
+body.nosotros {
+    background-image: url('img/fondo3.jpg');
+}
+
+body.contacto {
+    background-image: url('img/fondo4.jfif');
+}
+
+body.sugerencias {
+    background-image: url('img/fondo5.jfif');
+}
+
+body.encuesta {
+    background-image: url('img/fondo6.jfif');
+}
+body.inspira {
+    background-image: url('img/fondo7.jfif');
+}
+
+/* Propiedades comunes para todos los fondos */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+header {
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size:4em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #D39DE4;
+}
+
+nav ul li {
+    margin: 0 2em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #351240; 
+}
+main h2 {
+    font-family:  Times New Roman, serif; /* Cambia el tipo de letra */
+    font-size: 2.5em; /* Cambia el tamaño de letra */
+    color: #3E0E4D; /* Cambia el color de letra */
+    text-align: center; /* Centra el texto */
+    margin-top: 0.7em; /* Margen superior */
+}
+main h3 {
+    font-family:  Times New Roman, serif; /* Cambia el tipo de letra */
+    font-size: 2em; /* Cambia el tamaño de letra */
+    color: #420057; /* Cambia el color de letra */
+    text-align: center; /* Centra el texto */
+    margin-top: 0.4em; /* Margen superior */
+}
+
+
+main {
+    padding: 2em;
+}
+.banner img {
+    width: 30%;
+    max-height: 200px; /* Ajusta este valor según lo necesites */
+
+}
+.hero {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.hero img.logo {
+    max-width: 200px;
+    margin-bottom: 1em;
+}
+
+.hero .welcome {
+    font-size: 2.6em;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.hero .tagline {
+    font-size: 1.6em;
+    font-family: 'Georgia', serif;
+    color: #666;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.product-item {
+    background-color: white;
+    border: 3px solid #ddd;
+    padding: 3em;
+    width: calc(28% - 3em);
+}
+
+.product-item img {
+    max-width: 100%;
+}
+
+.product-item button {
+    background-color: #E81D88; /* Rosa */
+    color: white;
+    border: none;
+    padding: 0.7em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.product-item button:hover {
+    background-color: #F478BA;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea, form button {
+    margin-top: 0.6em;
+    padding: 0.6em;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #351240;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    padding: 0.7em;
+}
+
+form button:hover {
+    background-color: #8e44ad;
+}
+
+footer {
+    background-color: #351240;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.product-item p {
+    font-size: 1.6em; /* Tamaño de letra para la descripción */
+}
+
+.product-item button {
+    font-size: 1.6em; /* Tamaño del botón "Escribir Reseña" */
+    padding: 2em; /* Aumenta el espacio alrededor del texto dentro del botón */
+    margin-top: 2em; /* Ajusta el espacio entre la descripción y el botón */
+}
+.categorias-titulo {
+    font-size: 2em; /* Cambia el tamaño del texto */
+    color: #661064; /* Cambia el color del texto */
+    text-align: center; /* Centra el texto */
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.categoria {
+    background-color: #DF0065;
+    color: #F5E1EA;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    text-align: center;
+    margin: 0.7em;
+}
+
+.categoria:hover {
+    background-color: #D39AB4;
+}
+/* Estilos para la información de contacto */
+.contact-info {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 7em; /* Margen inferior */
+}
+
+.contact-info p {
+    font-size: 1.4em; /* Tamaño de letra */
+    color: #13060E; /* Color de letra */
+    margin: 0.8em 0; /* Margen */
+}
+
+.contact-info strong {
+    color: #310C42; /* Color para resaltar */
+}
+/* Estilos para formularios */
+form label {
+ font-family: 'Merriweather', serif;
+    font-size: 1.9em; /* Tamaño de letra */
+    color:#140618; /* Color de letra */
+    display: block;
+    margin: 0.4em 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    font-size: 2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #CB0A8B;
+    color: white;
+    padding: 0.9em 1.5em;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #732d91;
+}
+a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.pinterest-pins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    padding: 2em;
+}
+
+.pinterest-pins a {
+    display: block;
+    width: 240px;
+}
+
+.pinterest-pins img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.pinterest-pins img:hover {
+    transform: scale(1.05);
+}

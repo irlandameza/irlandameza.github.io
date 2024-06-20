@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polette Boutique - Perfumes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="productos">
+    <header>
+        <img src="img/logo.jpeg" alt="Polette Boutique Logo" class="logo">
+
+        <h1>Polette Boutique</h1>
+             <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="sugerencias.html">Sugerencias</a></li>
+        <li><a href="encuesta.html">Encuesta</a></li>
+        <li><a href="inspira.html">Inspos</a></li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nuestros Productos - Perfumes</h2>
+            <div class="product-gallery">
+                <div class="product-item">
+                    <img src="img/perfume1.jpeg" alt="Perfume 1">
+                    <p>Perfume Moschino Toy 2 Bubble Gum - $2,000</p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Set Moschino Toy 2 Bubble Gum')">Agregar Reseña</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/perfume2.jpeg" alt="Perfume 2">
+                    <p>Perfume Set Ariana Grande Sweet Like Candy - $1,000</p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Set Ariana Grande Sweet Like Candy')">Agregar Reseña</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/perfume3.jpeg" alt="Perfume 3">
+                    <p>Perfume Set Juicy Couture Viva la Juicy  - $1,200</p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Set Juicy Couture Viva la Juicy ')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/perfume4.jpeg" alt="Perfume 4">
+                    <p>Perfume Cloud Ariana Grande - $900</p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Cloud Ariana Grande')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/perfume5.jpeg" alt="Perfume 5">
+                    <p>Perfume Good girl de Carolina Herrera  - $1,400</p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Good girl de Carolina Herrera')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/perfume6.jpeg" alt="Perfume 6">
+                    <p>Perfume Purr Katy Perry - $900</p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Purr Katy Perry')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/perfume7.jpeg" alt="Perfume 7">
+                    <p>Perfume Very sexy Victoria's Secret - $650</p>
+                    <p>Reseñas: ⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Very sexy Victorias Secret')">Agregar Reseña</button>
+                </div>
+                  <div class="product-item">
+                    <img src="img/perfume8.jpeg" alt="Perfume 8">
+                    <p>Perfume Carolina Herrera Good Girl Jery Blush - $1,900</p>
+                    <p>Reseñas: ⭐⭐⭐⭐⭐</p>
+                    <button onclick="agregarResena('Carolina Herrera Good Girl Jery Blush')">Agregar Reseña</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Polette Boutique</p>
+    </footer>
+    <script>
+        function agregarResena(producto) {
+            const resena = prompt(`Escribe tu reseña para ${producto}:`);
+            if (resena) {
+                alert('¡Gracias por tu reseña!');
+            }
+        }
+    </script>
+</body>
+</html>

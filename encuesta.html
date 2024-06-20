@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta - Polette Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="encuesta">
+    <header>
+        <h1>Polette Boutique</h1>
+            <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="sugerencias.html">Sugerencias</a></li>
+        <li><a href="inspira.html">Inspos</a></li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <section>
+            <h2>¿Te gustó nuestra página?</h2>
+            <form action="procesar_encuesta.php" method="post">
+                <label>
+                    <input type="radio" name="respuesta" value="si"> Sí
+                </label>
+                <label>
+                    <input type="radio" name="respuesta" value="no"> No
+                </label>
+
+                <label for="satisfaccion">¿Qué tan satisfecho estás con nuestra tienda?</label>
+                <select id="satisfaccion" name="satisfaccion" required>
+                    <option value="muy_satisfecho">Muy Satisfecho</option>
+                    <option value="satisfecho">Satisfecho</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="insatisfecho">Insatisfecho</option>
+                    <option value="muy_insatisfecho">Muy Insatisfecho</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Polette Boutique</p>
+    </footer>
+</body>
+</html>
